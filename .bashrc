@@ -8,13 +8,13 @@ alias c="clear"
 alias r="reset"
 #Compund commands for ease of error viewing
 alias cm="clear && make"
-alias rm="reset && make"
+alias ram="reset && make"
 
 #Terminal colorization
-PS1='\[\e[36;1m\]\u@\h: \[\e[33m\]\W\[\e[0m\]\$ '
+PS1='\[\e[36;1m\]\u@\h: \[\e[33m\]\w\[\e[0m\]\$ '
 
 #Terminal command colorization
-alias grep='--color=auto'
+alias grep='grep --color=auto'
 alias ls='ls --color=always'
-export LS_COLORS='di=01;35:ln=01;36:ex=01;31:*.cpp=01;32:*.c=01;32:*.h=01;92:*.zip=01;33'
+export LS_COLORS='di=01;35:ln=01;36:ex=00;31:*.cpp=02;32:*.c=02;32:*.h=01;32:*.txt=01;33:*.zip=01;31'
 
