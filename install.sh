@@ -6,7 +6,7 @@ if [ $1 = "-o" ]; then
 	cat .bashrc > ~/.bashrc
 	cat .bash_profile > ~/.bash_profile
 else
-	#prevent overwriting of previous config
+	#append to previous config
 	cat .vimrc >> ~/.vimrc
 	cat .bashrc >> ~/.bashrc
 	cat .bash_profile >> ~/.bash_profile
